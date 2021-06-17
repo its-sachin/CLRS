@@ -37,12 +37,12 @@ void merge(int array[], int left, int mid, int right) {
     }
 }
 
-void msort(int array[], int left, int right) {
+void mergeSort(int array[], int left, int right) {
 
     if(left<right) {
         int mid = (right+left)/2;
-        msort(array,left,mid);
-        msort(array,mid+1,right);
+        mergeSort(array,left,mid);
+        mergeSort(array,mid+1,right);
         merge(array,left,mid,right);
     }
 
@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
     }
     std::cout<<""<<std::endl;
 
-    msort(array,0,size-1);
+    mergeSort(array,0,size-1);
 
     std::cout<<"SORTED: ";
     for(int i=0;i<size;i++){

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void csort(string a[], int n, int k, int digit) {
+void countingSort(string a[], int n, int k, int digit) {
 
     int c[k+1] = {0};
     
@@ -28,12 +28,12 @@ void csort(string a[], int n, int k, int digit) {
 
 }
 
-void rsort(string a[], int n, int d, int k){
+void radixSort(string a[], int n, int d, int k){
     //n-size of array
     //d-number of digits in each number(if not same then first append 0)
     //k-number of pooible values for digits(should be less than 10)
     for (int i=d-1; i>=0; i--){
-        csort(a,n,k,i);
+        countingSort(a,n,k,i);
     }
 }
 
@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
     }
     std::cout<<""<<std::endl;
 
-    rsort(array,size,3,9);
+    radixSort(array,size,3,9);
 
     std::cout<<"SORTED: ";
     for(int i=0;i<size;i++){

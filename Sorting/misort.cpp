@@ -38,7 +38,7 @@ void merge(int array[], int left, int mid, int right) {
 }
 
 
-void isort(int array[], int left, int right) {
+void insertionSort(int array[], int left, int right) {
 
     for (int i= left+1; i<=right; i++){
         int key = array[i];
@@ -54,7 +54,7 @@ void isort(int array[], int left, int right) {
 void misort(int array[], int left, int right, int k) {
 
     if (right-left < k){
-        isort(array,left,right);
+        insertionSort(array,left,right);
     }
 
     else{

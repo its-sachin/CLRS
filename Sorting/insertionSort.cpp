@@ -2,7 +2,7 @@
 
 
 
-void isort(int array[], int left, int right) {
+void insertionSort(int array[], int left, int right) {
 
     for (int i= left+1; i<=right; i++){
         int key = array[i];
@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
     }
     std::cout<<""<<std::endl;
 
-    isort(array,0,size-1);
+    insertionSort(array,0,size-1);
 
     std::cout<<"SORTED: ";
     for(int i=0;i<size;i++){

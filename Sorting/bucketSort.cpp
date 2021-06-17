@@ -8,7 +8,7 @@ int inc(double ai, int n){
     return n*ai;
 }
 
-void isort(vector<double> &a){
+void insertionSort(vector<double> &a){
     for (auto it = a.begin(); it != a.end(); it++)
     {        
         auto const p = upper_bound(a.begin(), it, *it);
@@ -18,10 +18,10 @@ void isort(vector<double> &a){
 }
 
 
-void bsort(double a[], int n){
+void bucketSort(double a[], int n){
 
     //change inc() for changinf way of distribution in vectors
-    //used inbuilt vector sorting algo and isort, can write another algo sorting a list(vector) 
+    //used inbuilt vector sorting algo and insertionSort, can write another algo sorting a list(vector) 
 
     vector<double> b[n];
     for (int i=0; i<n; i++){
@@ -30,7 +30,7 @@ void bsort(double a[], int n){
 
     for (int i=0; i<n; i++){
         sort(b[i].begin(),b[i].end());
-        // isort(b[i]);
+        // insertionSort(b[i]);
     }
 
     int j=0;
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
     }
     std::cout<<""<<std::endl;
 
-    bsort(array,size);
+    bucketSort(array,size);
 
     std::cout<<"SORTED: ";
     for(int i=0;i<size;i++){

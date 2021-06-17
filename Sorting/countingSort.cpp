@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void csort(int a[], int n, int k) {
+void countingSort(int a[], int n, int k) {
 
     //stable, just change datatype for usage
 
@@ -31,7 +31,7 @@ void csort(int a[], int n, int k) {
 
 }
 
-void csortNS(int a[], int n, int k) {
+void countingSortNS(int a[], int n, int k) {
 
     //not stable, cannot be used for arbitrary dataype 
 
@@ -67,7 +67,7 @@ int main(int argc, char const *argv[])
     }
     std::cout<<""<<std::endl;
 
-    csortNS(array,size,5);
+    countingSortNS(array,size,5);
 
     std::cout<<"SORTED: ";
     for(int i=0;i<size;i++){
