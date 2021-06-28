@@ -37,9 +37,9 @@ int binarySearch(int a[], int n, int val){
 
 int main(int argc, char const *argv[])
 {
-    int size = 9;
-    int m[size] = {1,5,10,20,100,130,190,400,900};
-    cout<<bruteForce(m,size,stoi(argv[1]))<<endl;
+    int size = 4;
+    int m[size] = {2,3,1,4};
+    // cout<<bruteForce(m,size,stoi(argv[1]))<<endl;
     cout<<binarySearch(m,size,stoi(argv[1]))<<endl;
     return 0;
 }
