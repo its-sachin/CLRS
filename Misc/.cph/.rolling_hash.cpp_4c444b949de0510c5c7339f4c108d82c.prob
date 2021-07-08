@@ -1,0 +1,1 @@
+{"name":"Local: rolling_hash","url":"e:\\Practice\\CLRS\\Misc\\rolling_hash.cpp","tests":[{"id":1625381885243,"input":"abcd\nbc","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Practice\\CLRS\\Misc\\rolling_hash.cpp","group":"local","local":true}
